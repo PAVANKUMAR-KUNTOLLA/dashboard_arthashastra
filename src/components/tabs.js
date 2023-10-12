@@ -62,7 +62,7 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <Grid container>
-        <Grid item sm={6} xs={12}>
+        <Grid item sm={7} xs={12}>
           <CustomTabPanel value={value} index={0}>
             <LineChartV3 />
           </CustomTabPanel>
