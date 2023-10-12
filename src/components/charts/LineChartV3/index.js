@@ -58,17 +58,28 @@ const LineChartV3 = ({
           marginLeft: 0, // Remove left margin
           marginRight: 0, // Remove right margin
         },
-        title: { text: title },
+        title: {
+          text: title,
+          style: {
+            fontSize: "24px", // Adjust the chart title font size as needed
+          },
+        },
         subtitle: { text: subtitle },
         xAxis: {
           title: {
-            text: xLabel,
+            text: "Years",
+            style: {
+              fontSize: "16px", // Adjust the X-axis title font size as needed
+            },
           },
           categories: getCategories(data, x_field),
         },
         yAxis: {
           title: {
-            text: yLabel,
+            text: "Medals Won",
+            style: {
+              fontSize: "16px", // Adjust the Y-axis title font size as needed
+            },
           },
           labels: {
             formatter: function () {
@@ -80,7 +91,7 @@ const LineChartV3 = ({
         // Set series type to "line" and increase lineWidth
         plotOptions: {
           series: {
-            type: "curve",
+            type: "line",
             lineWidth: 2, // Adjust the line width as needed
           },
         },
